@@ -1,0 +1,34 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author Danah Ahmed
+ */
+
+
+public class PartTimeEmployee extends Employee {
+    public PartTimeEmployee(String name, String position, double basicSalary, int experience, String educationalLevel) {
+        super(name, position, basicSalary, experience, educationalLevel);
+    }
+
+    @Override
+    public double calculateSalary() {
+        double TotalSalary = getSalary() + (getSalary() * 0.05 * getExperience());
+
+        if (getEducationalLevel().equals("Bachelor Degree")) {
+            TotalSalary += 500;
+        } else if (getEducationalLevel().equals("Diploma")) {
+            TotalSalary += 250;
+        }
+
+        return TotalSalary;
+    }
+
+    @Override
+    public double calculateBonus() {
+        return getSalary() * 0.015;
+    }
+}
