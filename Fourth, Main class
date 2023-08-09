@@ -1,0 +1,32 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+
+
+public class Main {
+    public static void main(String[] args) {
+        FullTimeEmployee fullTimeEmployee = new FullTimeEmployee("Danah", "Manager", 5000, 5, "Bachelor Degree");
+        double fullTimeSalary = fullTimeEmployee.calculateSalary();
+        double fullTimeBonus = fullTimeEmployee.calculateBonus();
+
+        PartTimeEmployee partTimeEmployee = new PartTimeEmployee("Israa", "Assistant", 2000, 3, "Diploma");
+        double partTimeSalary = partTimeEmployee.calculateSalary();
+        double partTimeBonus = partTimeEmployee.calculateBonus();
+
+        System.out.println("Full Time Employee Details:");
+        System.out.println("Name: " + fullTimeEmployee.getName());
+        System.out.println("Position: " + fullTimeEmployee.getPosition());
+        System.out.println("Experience: " + fullTimeEmployee.getExperience() + " years");
+        System.out.println("Salary: " + fullTimeSalary);
+        System.out.println("Bonus: " + fullTimeBonus);
+
+        System.out.println("\nPart Time Employee Details:");
+        System.out.println("Name: " + partTimeEmployee.getName());
+        System.out.println("Position: " + partTimeEmployee.getPosition());
+        System.out.println("Experience: " + partTimeEmployee.getExperience() + " years");
+        System.out.println("Salary: " + partTimeSalary);
+        System.out.println("Bonus: " + partTimeBonus);
+    
+    }
+}
