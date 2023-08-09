@@ -12,14 +12,14 @@
 public abstract class Employee {
     private String name;
     private String position;
-    private double basicSalary;
+    private double Salary;
     private int experience;
     private String educationalLevel;
 
-    public Employee(String name, String position, double basicSalary, int experience, String educationalLevel) {
+    public Employee(String name, String position, double Salary, int experience, String educationalLevel) {
         this.name = name;
         this.position = position;
-        this.basicSalary = basicSalary;
+        this.Salary = Salary;
         this.experience = experience;
         this.educationalLevel = educationalLevel;
     }
@@ -45,12 +45,12 @@ public abstract class Employee {
         this.position = position;
     }
 
-    public double getBasicSalary() {
-        return basicSalary;
+    public double getSalary() {
+        return Salary;
     }
 
-    public void setBasicSalary(double basicSalary) {
-        this.basicSalary = basicSalary;
+    public void setBasicSalary(double Salary) {
+        this.Salary = Salary;
     }
 
     public int getExperience() {
