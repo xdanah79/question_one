@@ -9,6 +9,7 @@
  */
 
 
+
 public class PartTimeEmployee extends Employee {
     public PartTimeEmployee(String name, String position, double basicSalary, int experience, String educationalLevel) {
         super(name, position, basicSalary, experience, educationalLevel);
